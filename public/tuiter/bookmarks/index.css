@@ -1,0 +1,163 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.wd-container {
+    padding: 12px;
+    display: flex;
+}
+
+.wd-navbar {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.wd-tuit {
+    border-bottom: 0.5px solid #8d8d8da1;
+    padding: 12px;
+    margin-bottom: 12px;
+    margin-left: 60px;
+}
+
+.wd-tuit-header {
+    display: flex;
+    align-items: center;
+}
+
+.wd-profile-pic {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -70px;
+}
+
+.wd-user-info {
+    flex-grow: 1;
+}
+
+.wd-username {
+    font-weight: bold;
+}
+
+.wd-handle {
+    color: #657786;
+}
+
+.wd-tuit-options {
+    text-align: right;
+}
+
+.wd-options-icon {
+    font-size: 16px;
+    color: #657786;
+}
+
+.wd-tuit-text {
+    margin-top: 10px;
+}
+
+.title-and-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.wd-tuit-link {
+    border: 1px solid #e1e8ed;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    color: inherit;
+}
+
+.wd-tuit-link:hover {
+    background-color: #f5f8fa;
+}
+
+.wd-tuit-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.wd-tuit-link-text {
+    padding: 12px;
+}
+
+.wd-tuit-link-url {
+    color: #657786;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.wd-tuit-link-headline {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.wd-tuit-link-description {
+    color: #657786;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.wd-tuit-link a {
+    text-decoration: none;
+}
+
+.wd-tuit-content {
+    display: flex;
+    align-items: center; 
+}
+
+.wd-tuit-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.wd-tuit-actions i {
+    margin-right: 10px;
+}
+
+.wd-action-count {
+    margin-left: 5px;
+}
+
+.back-button-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid #cccccc00;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.bookmarks-title {
+    margin: 0;
+}
+
+.back-button:hover {
+    background-color: #cccccc;
+}
+
+.wd-action-item {
+    padding: 10px;
+}
+
+.fas.fa-check-circle {
+    color: rgb(29, 161, 242);
+    margin-left: 5px; 
+}

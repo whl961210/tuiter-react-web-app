@@ -1,0 +1,21 @@
+[
+    {
+      "_id": 123,
+      "userName": "NASA",
+      "handle": "NASA",
+      "avatarIcon": "https://images.seattletimes.com/wp-content/uploads/2019/07/nasameatball.jpg"
+    },
+    {
+      "_id": 234,
+      "userName": "Tesla",
+      "handle": "tesla",
+      "avatarIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/600px-Tesla_logo.png?20210117060557"
+    },
+    {
+      "_id": 345,
+      "userName": "SpaceX",
+      "handle": "SpaceX",
+      "avatarIcon": "https://www.doz.com/wp-content/uploads/2015/03/spacex-logo.jpg"
+    }
+   ]
+   

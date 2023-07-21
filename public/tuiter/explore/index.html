@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="index.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-xxl-3 col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2">
+        <div class="list-group">
+          <a href="../navigation.html" class="list-group-item list-group-item-action"><i
+              class="fab fa-twitter"></i><span class="d-none d-xl-inline"> Twitter</span></a>
+          <a href="../home.html" class="list-group-item list-group-item-action"><i class="fas fa-home"></i><span
+              class="d-none d-xl-inline"> Home</span></a>
+          <a href="index.html" class="list-group-item list-group-item-action active"><i class="fas fa-compass"></i><span
+              class="d-none d-xl-inline"> Explore</span></a>
+          <a href="../notifications.html" class="list-group-item list-group-item-action"><i
+              class="fas fa-bell"></i><span class="d-none d-xl-inline"> Notifications</span></a>
+          <a href="../messages.html" class="list-group-item list-group-item-action"><i class="fas fa-envelope"></i><span
+              class="d-none d-xl-inline"> Messages</span></a>
+          <a href="../bookmarks/bookmarks-css.html" class="list-group-item list-group-item-action"><i
+              class="fas fa-bookmark"></i><span class="d-none d-xl-inline"> Bookmarks</span></a>
+          <a href="../lists.html" class="list-group-item list-group-item-action"><i class="fas fa-list"></i><span
+              class="d-none d-xl-inline"> Lists</span></a>
+          <a href="../profile.html" class="list-group-item list-group-item-action"><i class="fas fa-user"></i><span
+              class="d-none d-xl-inline"> Profile</span></a>
+          <a href="../more.html" class="list-group-item list-group-item-action"><i class="fas fa-ellipsis-h"></i><span
+              class="d-none d-xl-inline"> More</span></a>
+        </div>
+        <div class="list-group">
+          <button class="btn btn-primary rounded-pill w-100 mt-3">Tweet</button>
+        </div>
+      </div>
+
+      <!-- Center Column -->
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10 col-6">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search"
+            style="padding-left: 40px; border-radius: 15px;" />
+          <div class="input-group-prepend" style="position: absolute;">
+            <span class="input-group-text bg-transparent border-0"
+              style="left: 12px; top: 50%; transform: translateY(25%); border-radius: 15px;"><i
+                class="fa fa-search"></i></span>
+          </div>
+          <div class="input-group-append">
+            <span class="input-group-text bg-transparent border-0"
+              style="border-radius: 15px; color:rgb(29, 141, 242);"><i class="fas fa-cog fa-2x"></i></span>
+          </div>
+        </div>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">For You</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-none d-md-block" href="#">Entertainment</a>
+          </li>
+        </ul>
+
+        <!-- Image and Twitter list -->
+        <div class="mt-3" style="border: 1px solid #ddd; border-radius: 0.25rem; overflow: hidden;">
+          <div class="position-relative">
+            <img src="https://e0.365dm.com/23/06/1600x900/skysports-declan-rice-arsenal_6201821.png?20230628204446"
+              class="img-fluid">
+            <h2 class="position-absolute bottom-0 start-0 p-3 text-white overlay">Declan Rice to Arsenal</h2>
+          </div>
+
+          <div class="container">
+            <!-- First tweet -->
+            <div class="row tuit">
+              <div class="col-8">
+                <div>
+                  <span class="text-gray">Web Development <br></span>
+                  <span class="user-text"><strong>ReactJS </strong><i class="fas fa-check-circle"></i></span>
+                  <span class="text-gray"> -2h</span>
+                  <span class="text-black"><br><strong>React.js is a component based front end library that makes it
+                      very easy to build Single Page Applications or SAPs</strong></span>
+                </div>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/90px-React-icon.svg.png"
+                  alt="description" class="ml-3 rounded-circle" style="width: 50px; height: 50px;">
+              </div>
+            </div>
+
+            <!-- Second tweet -->
+            <div class="row tuit">
+              <div class="col-8">
+                <div>
+                  <span class="user-text"><strong>JavaScript </strong><i class="fas fa-check-circle"></i></span>
+                  <span class="text-gray"> -2h</span>
+                  <span class="text-black"><br><strong>JavaScript is a programming language that can run on browsers as
+                      well as desktops</strong></span>
+                  <br>
+                  <span class="text-gray"> 123k Tweets</span>
+                </div>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <img src="https://www.javascripttutorial.net/wp-content/uploads/2021/04/JavaScript-Tutorial.svg"
+                  alt="description" class="ml-3" style="width: 50px; height: 50px;">
+              </div>
+            </div>
+
+            <!-- Third tweet -->
+            <div class="row tuit">
+              <div class="col-8">
+                <div>
+                  <span class="text-gray">Web Development <br></span>
+                  <span class="user-text"><strong>jQuery </strong></span>
+                  <br>
+                  <span class="text-gray"> 123k Tweets</span>
+                </div>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <img src="http://www.chicagocomputerclasses.com/wp-content/uploads/2016/01/jquery.gif" alt="description"
+                  class="ml-3" style="width: 50px; height: 50px;">
+              </div>
+            </div>
+
+            <!-- Fourth tweet -->
+            <div class="row tuit" style="border-bottom: none;">
+              <div class="col-8">
+                <div>
+                  <span class="text-gray">Web Development <br></span>
+                  <span class="user-text"><strong>NodeJS </strong><i class="fas fa-check-circle"></i></span>
+                  <span class="text-gray"> -2h</span>
+                  <br>
+                  <span class="text-gray"> 123k Tweets</span>
+                </div>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <img src="https://plugins.jetbrains.com/files/6098/360918/icon/pluginIcon.svg" alt="description"
+                  class="ml-3" style="width: 50px; height: 50px;">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="col-3 d-none d-lg-block">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class='user-text'><strong>Who to follow</strong></span>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img src="https://upload.wikimedia.org/wikipedia/zh/thumb/8/88/Java_logo.png/220px-Java_logo.png"
+                  class="fixed-size-image rounded-circle" style="width: 48px; height: 48px;">
+              </div>
+              <div class="col-6">
+                <span class="user-text"><strong>Java</strong></span><i class="fas fa-check-circle"></i>
+                <br>
+                <span class="text-gray">@Java</span>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/180px-Arsenal_FC.svg.png"
+                  class="fixed-size-image rounded-circle" style="width: 48px; height: 48px;">
+              </div>
+              <div class="col-6">
+                <span class="user-text"><strong>Arsenal</strong></span><i class="fas fa-check-circle"></i>
+                <br>
+                <span class="text-gray">@Arsenal</span>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img src="https://pbs.twimg.com/profile_images/1478893871199186945/1mA6tezL_400x400.jpg"
+                  class="fixed-size-image rounded-circle" style="width: 48px; height: 48px;">
+              </div>
+              <div class="col-6">
+                <span class="user-text"><strong>Dota2</strong></span><i class="fas fa-check-circle"></i>
+                <br>
+                <span class="text-gray">@DOTA2</span>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img src="https://pbs.twimg.com/profile_images/1599890514987229185/TLvRfzx7_400x400.jpg"
+                  class="fixed-size-image rounded-circle" style="width: 48px; height: 48px;">
+              </div>
+              <div class="col-6">
+                <span class="user-text"><strong>Overwatch</strong></span><i class="fas fa-check-circle"></i>
+                <br>
+                <span class="text-gray">@PLAYOverwatch</span>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img src="https://pbs.twimg.com/profile_images/1295842645097549830/FJ16ThMG_400x400.jpg"
+                  class="fixed-size-image rounded-circle" style="width: 48px; height: 48px;">
+              </div>
+              <div class="col-6">
+                <span class="user-text"><strong>Northeastern U.</strong></span><i class="fas fa-check-circle"></i>
+                <br>
+                <span class="text-gray">@Northeastern</span>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
