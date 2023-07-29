@@ -8,6 +8,9 @@ import ProfileScreen from './navigation-sidebar/profile-screen';
 import WhoToFollowListItem
   from "./who-to-follow-list/who-to-follow-list-item";
 import WhoToFollowList from "./who-to-follow-list";
+import NotificationsScreen from "./navigation-sidebar/Notifications";
+import MessageScreen from "./navigation-sidebar/messages";
+import ListScreen from "./navigation-sidebar/lists";
 function Tuiter() {
   return (
     <div>
@@ -22,6 +25,11 @@ function Tuiter() {
             <Route path="/explore" element={<ExploreScreen />} />
             <Route path="/bookmarks" element={<BookmarksScreen />} />
             <Route path="/profile" element={<ProfileScreen />} />
+            <Route path="/notifications" element={<NotificationsScreen/>} />
+            <Route path="/messages" element={<MessageScreen/>} />
+            <Route path="/lists" element={<ListScreen/>} />
+            <Route path="/more" element={<h1>More</h1>} />
+
           </Routes>
 
         </div>
