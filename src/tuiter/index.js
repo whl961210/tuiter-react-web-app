@@ -39,7 +39,7 @@ function Tuiter() {
               <Route path="/more" element={<h1>More</h1>} />
             </Routes>
           </div>
-          <div className="col-3">
+          <div className="col-3 d-none d-lg-block">
             <WhoToFollowList/>
           </div>
         </div>
@@ -47,4 +47,5 @@ function Tuiter() {
     </Provider>
   );
 }
+
 export default Tuiter;
