@@ -27,7 +27,7 @@ function Tuiter() {
           <div className="col-2">
             <NavigationSidebar />
           </div>
-          <div className="col-7 col-sm-10 col-md-10 col-lg-7">
+          <div className="col-10 col-sm-10 col-md-10 col-lg-7">
             <Routes>
               <Route path="/home" element={<HomeScreen />} />
               <Route path="/explore" element={<ExploreScreen />} />

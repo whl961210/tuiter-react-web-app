@@ -14,7 +14,7 @@ const TuitItem = ({ tuit }) => {
     return (
         <li className="list-group-item border">
             <div className="row">
-                <div className="col-2"style={{ padding: '0 25px' }}>
+                <div className="col-2 d-none d-sm-block"style={{ padding: '0 25px' }}>
                     <img width={70} className="rounded-3" src={tuit.image} />
                 </div>
                 <div className="col-10" style={{ paddingRight: '30px' }}>
