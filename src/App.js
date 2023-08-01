@@ -4,6 +4,8 @@ import Tuiter from "./tuiter";
 import {HashRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 import {Navigate} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (

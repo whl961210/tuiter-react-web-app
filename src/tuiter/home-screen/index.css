@@ -1,0 +1,10 @@
+.home-screen {
+    padding: 20px;
+    background-color: #F5F8FA;
+    display: flex;
+    justify-content: center;
+}
+
+.home-screen > * {
+    max-width: 600px;
+}

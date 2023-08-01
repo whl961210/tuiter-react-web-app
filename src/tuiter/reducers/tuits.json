@@ -1,0 +1,44 @@
+[
+    {
+      "_id": 123,
+      "topic": "Space",
+      "userName": "SpaceX",
+      "title": "Tesla CyberTruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+      "time": "2h",
+      "image": "https://www.doz.com/wp-content/uploads/2015/03/spacex-logo.jpg",
+      "liked": true,
+      "replies": 123,
+      "retuits": 453,
+      "likes": 2345,
+      "handle": "@spacex",
+      "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can't think of anything more exciting than going out there and being among the stars"
+    },
+    {
+      "_id": 234,
+      "topic": "Space",
+      "userName": "SpaceX",
+      "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+      "time": "2h",
+      "image": "https://www.doz.com/wp-content/uploads/2015/03/spacex-logo.jpg",
+      "liked": true,
+      "replies": 123,
+      "retuits": 7865,
+      "likes": 2345,
+      "handle": "@spacex",
+      "tuit": "SpaceX has officially completed its second successful test of Starship's water deluge system. However, this water might be considered industrial waste under environmental law."
+    },
+    {
+      "_id": 345,
+      "topic": "Energy",
+      "userName": "Tesla",
+      "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+      "time": "4d",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/600px-Tesla_logo.png?20210117060557",
+      "liked": true,
+      "replies": 123,
+      "retuits": 138,
+      "likes": 5821,
+      "handle": "@tesla",
+      "tuit": "You can now schedule service, track progress & manage pick up/drop off via the Tesla app"
+    }
+  ]
