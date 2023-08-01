@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { likeTuit, unlikeTuit } from '../reducers/tuits-reducer';
-import { FaRegComment, FaRetweet, FaRegHeart, FaUpload} from 'react-icons/fa';
+import { FaRegComment, FaRetweet, FaHeart, FaUpload} from 'react-icons/fa';
 
 const TuitStats = ({ tuit }) => {
     const dispatch = useDispatch();
@@ -14,6 +14,8 @@ const TuitStats = ({ tuit }) => {
         }
     };
 
+    const heartStyle = tuit.liked ? { color: 'red' } : {};
+
     return (
         <div className="tuit-stats d-flex justify-content-between">
             <div className="me-3">
@@ -25,12 +27,12 @@ const TuitStats = ({ tuit }) => {
                 {tuit.retuits} Retuits
             </div>
             <div onClick={handleLike} className={tuit.liked ? 'liked' : ''}>
-                <FaRegHeart className="me-1" />
+                <FaHeart style={heartStyle} className="me-1" />
                 {tuit.likes} Likes
             </div>
             <div className="me-3">
                 <FaUpload className="me-1" />
-                </div>
+            </div>
         </div>
     );
 };
