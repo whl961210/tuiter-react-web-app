@@ -32,11 +32,6 @@ function RegisterScreen() {
        <input className="form-control" type="password" value={password}
          onChange={(event) => setPassword(event.target.value)}/>
      </div>
-     <div className="mt-2">
-       <label>Email</label>
-       <input className="form-control" type="email" value={email}
-         onChange={(event) => setEmail(event.target.value)}/>
-     </div>
      <button className="btn btn-primary mt-2"
              onClick={handleRegister}>
        Register
