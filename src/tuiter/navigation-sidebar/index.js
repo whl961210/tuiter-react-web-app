@@ -11,22 +11,23 @@ const NavigationSidebar = () => {
   const { currentUser } = useSelector((state) => state.user);
   const [ignore, tuiter, active] = pathname.split("/");
   
-  const links = [
+  const baseLinks = [
     { name: "home", icon: <FaHome /> },
     { name: "explore", icon: <FaSearch /> },
     { name: "notifications", icon: <FaBell /> },
     { name: "messages", icon: <FaEnvelope /> },
     { name: "bookmarks", icon: <FaBookmark /> },
     { name: "lists", icon: <FaList /> },
-    { name: "profile", icon: <FaUser /> },
     { name: "more", icon: <FaEllipsisH /> },
   ];
+  
+  // Add profile link to the array if the user is logged in
+  const links = currentUser ? [...baseLinks, { name: "profile", icon: <FaUser /> }] : baseLinks;
   
   return (
     <div className="list-group">
       {!currentUser && <Link className="list-group" to="/tuiter/login">Login</Link>}
       {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
-      { currentUser && <Link className="list-group" to="/tuiter/profile">Profile</Link>}
       {links.map((link) => 
           <Link 
             key={link.name} 

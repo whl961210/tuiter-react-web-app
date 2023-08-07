@@ -4,8 +4,7 @@ import * as authService from "./auth-service";
 export const profileThunk = createAsyncThunk(
     "auth/profile", async () => {
         const response = authService.profile();
-        console.log(response);
-        return response.data;
+        return response;
     });
 export const logoutThunk = createAsyncThunk(
     "auth/logout", async () => {
