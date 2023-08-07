@@ -1,20 +1,36 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { likeTuit, unlikeTuit } from '../reducers/tuits-reducer';
-import { FaRegComment, FaRetweet, FaHeart, FaUpload} from 'react-icons/fa';
+import { updateTuitThunk } from '../services/tuits-thunks';  // Import updateTuitThunk
+import { FaRegComment, FaRetweet, FaHeart, FaUpload, FaThumbsDown } from 'react-icons/fa';
 
 const TuitStats = ({ tuit }) => {
     const dispatch = useDispatch();
 
     const handleLike = () => {
-        if (tuit.liked) {
-            dispatch(unlikeTuit(tuit._id));
-        } else {
-            dispatch(likeTuit(tuit._id));
-        }
+        const updatedTuit = {
+            ...tuit,
+            liked: !tuit.liked,
+            likes: tuit.liked ? tuit.likes - 1 : tuit.likes + 1
+        };
+
+        dispatch(updateTuitThunk(updatedTuit));
     };
+    const handleDislike = () => {
+        const currentDislikes = Number(tuit.dislikes) || 0;
+        const updatedDislikes = tuit.disliked ? currentDislikes - 1 : currentDislikes + 1;
+        
+        const updatedTuit = {
+            ...tuit,
+            disliked: !tuit.disliked,
+            dislikes: updatedDislikes
+        };
+    
+        dispatch(updateTuitThunk(updatedTuit));
+    };
+    
 
     const heartStyle = tuit.liked ? { color: 'red' } : {};
+    const thumbDownStyle = tuit.disliked ? { color: 'blue' } : {};
 
     return (
         <div className="tuit-stats d-flex justify-content-between">
@@ -30,6 +46,10 @@ const TuitStats = ({ tuit }) => {
                 <FaHeart style={heartStyle} className="me-1" />
                 {tuit.likes} Likes
             </div>
+            <div onClick={handleDislike} className={tuit.disliked ? 'disliked' : ''}>
+            <FaThumbsDown style={thumbDownStyle} className="me-1" />
+            {tuit.dislikes} Dislikes
+        </div>
             <div className="me-3">
                 <FaUpload className="me-1" />
             </div>
