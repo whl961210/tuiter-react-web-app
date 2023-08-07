@@ -19,7 +19,9 @@ export const updateUser = async (user) => {
 };
 export const register = async ({ username, password}) => {
     const response = await api.post(`${USERS_URL}/register`, { username, password});
+    console.log(response);
     const user = response.data;
+    console.log(user);
     return user;
 };
 export const login = async ({ username, password }) => {
