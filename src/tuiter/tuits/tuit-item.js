@@ -19,7 +19,7 @@ const TuitItem = ({ tuit }) => {
                 </div>
                 <div className="col-10" style={{ paddingRight: '30px' }}>
                     <div>
-                        <span className="fw-bolder">{tuit.userName} </span>
+                        <span className="fw-bolder">{tuit.username} </span>
                         <AiFillCheckCircle style={{ color: 'rgb(29, 161, 242)' }} />
                         <span className="me-2"> {tuit.handle}</span>
                         <span className='time'>. {tuit.time}</span>
