@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { 
     FaHome, FaSearch, FaBell, FaEnvelope, 
-    FaBookmark, FaList, FaUser, FaEllipsisH 
+    FaBookmark, FaList, FaUser, FaEllipsisH,FaSignInAlt, FaUserPlus
 } from 'react-icons/fa'; // Import icons
 
 const NavigationSidebar = () => {
@@ -19,15 +19,18 @@ const NavigationSidebar = () => {
     { name: "bookmarks", icon: <FaBookmark /> },
     { name: "lists", icon: <FaList /> },
     { name: "more", icon: <FaEllipsisH /> },
+    // Add login and register to baseLinks
+    { name: "login", icon: <FaSignInAlt /> },
+    { name: "register", icon: <FaUserPlus /> },
   ];
   
-  // Add profile link to the array if the user is logged in
-  const links = currentUser ? [...baseLinks, { name: "profile", icon: <FaUser /> }] : baseLinks;
+  // If user is logged in, add profile link and remove login and register links
+  const links = currentUser 
+      ? [...baseLinks.filter(link => link.name !== "login" && link.name !== "register"), { name: "profile", icon: <FaUser /> }]
+      : baseLinks;
   
   return (
     <div className="list-group">
-      {!currentUser && <Link className="list-group" to="/tuiter/login">Login</Link>}
-      {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
       {links.map((link) => 
           <Link 
             key={link.name} 
